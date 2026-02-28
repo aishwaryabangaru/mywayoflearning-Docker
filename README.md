@@ -54,6 +54,7 @@ They ensure:
 - Docker Hub / Registry — image storage.
 
 9.**Docker Images**
+
  A Docker image is a read-only template used to create containers. It contains:
 - Base OS layer (e.g., Alpine, Ubuntu)
 - Application runtime (Node, Python, Java)
