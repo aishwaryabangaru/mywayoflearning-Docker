@@ -40,14 +40,14 @@ They ensure:
 - cgroups (resource limits)
 - Union file systems (layered images
 
- 7.** What Docker Is**
+ 7.**What Docker Is**
 -Docker is a platform that:
 - Builds container images.
 - Runs containers.
 - Manages container lifecycle.
 - Provides registries to store and share images.
   
- 8.** Docker components:**
+ 8.**Docker components**:
 - Docker Engine — runtime that executes containers.
 - Docker CLI — command-line interface.
 - Docker Daemon — background service managing containers.
