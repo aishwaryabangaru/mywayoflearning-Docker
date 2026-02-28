@@ -1,10 +1,12 @@
 
 1.**What a container actually is** 
-A container is a runtime instance of a Docker image. An image is the blueprint; the container is the running process created from that blueprint. It uses the host machine’s kernel but keeps its own isolated filesystem, network stack, and process space.
+
+-A container is a runtime instance of a Docker image. An image is the blueprint; the container is the running process created from that blueprint. It uses the host machine’s kernel but keeps its own isolated filesystem, network stack, and process space.
 This isolation is achieved through Linux features such as namespaces (for isolation) and cgroups (for resource limits).
 
 2.**Why containers exist**
-Containers solve a classic problem: “It works on my machine, but not on yours.”
+
+-Containers solve a classic problem: “It works on my machine, but not on yours.”
 They ensure:
 - Consistency — same environment everywhere (dev, test, prod).
 - Portability — run on any machine with Docker installed.
@@ -12,7 +14,7 @@ They ensure:
 - Efficiency — much lighter than virtual machines because they don’t need a full OS
 
  3.**What’s inside a container**
- A container typically includes:
+ -A container typically includes:
 - Application code (e.g., Python, Node.js, Java)
 - Runtime (e.g., Python interpreter, JVM)
 - Required libraries and dependencies
