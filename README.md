@@ -39,7 +39,7 @@ They ensure:
 - Union file systems (layered images
 
  7.** What Docker Is**
-  Docker is a platform that:
+-Docker is a platform that:
 - Builds container images.
 - Runs containers.
 - Manages container lifecycle.
@@ -69,7 +69,7 @@ They ensure:
 - Layers are cached to speed up builds.
 - Reusing layers reduces image size.
 
-Dockerfile Essentials
+10.**Dockerfile Essentials**
 Common instructions:
 - FROM — base image
 - WORKDIR — set working directory
@@ -82,7 +82,7 @@ Common instructions:
 - USER — run container as non-root
 - .dockerignore — exclude files from build context
 
- **Container Lifecycle**
+ 11.**Container Lifecycle**
 Typical lifecycle:
 - Build image → docker build
 - Run container → docker run
@@ -91,7 +91,7 @@ Typical lifecycle:
 - Remove container → docker rm
 - Remove image → docker rmi
 
- **Core Docker Commands (Interview Must-Know)**
+ 12.**Core Docker Commands (Interview Must-Know)**
 Image Commands
 - docker build -t name:tag . — build image
 - docker images — list images
@@ -116,7 +116,7 @@ Debugging Commands
 - docker exec -it container sh — debug inside container
 - docker events — monitor Docker daemon
 
- **Docker Networking Basics**
+ 13.**Docker Networking Basics**
 Docker provides:
 - Bridge network (default)
 - Host network (shares host network)
@@ -126,7 +126,7 @@ Key concepts:
 - Containers on the same user-defined network can communicate by name.
 - Port mapping (-p) exposes container ports to the host.
 
- **Docker Volumes**
+ 14.**Docker Volumes**
 Volumes persist data beyond container lifecycle.
 Types:
 - Named volumes — managed by Docker
@@ -141,7 +141,7 @@ Use cases:
 - Logs
 - Config files
 
-**Docker Compose Basics**
+15.**Docker Compose Basics**
 Compose manages multi-container applications using a docker-compose.yml file.
 Common commands:
 - docker-compose up -d — start all services
@@ -154,7 +154,7 @@ Compose features:
 - Environment variables
 - Volume management
 
-**Security Basics**
+16.**Security Basics**
 Important practices:
 - Avoid running as root inside containers.
 - Use minimal base images (Alpine, Distroless).
@@ -162,7 +162,7 @@ Important practices:
 - Do not store secrets in images.
 - Use .dockerignore to avoid leaking sensitive files.
 
-Common Interview Scenarios
+17.**Common Interview Scenarios**
 - Container exits immediately → entrypoint or CMD issue.
 - App not reachable → port mapping or network issue.
 - Image too large → multi-stage builds, smaller base image.
